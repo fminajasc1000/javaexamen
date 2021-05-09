@@ -47,4 +47,13 @@ public class AppController {
 	public String admin() {
 		return "admin";
 	}
+	/*
+	 * Este metodo sirve para que si coloca "/visor"
+	 * nos regrese a visor
+	 * @return "visor"
+	 * */
+	@GetMapping("/visor")
+	public String visor() {
+		return "visor";
+	}
 }
