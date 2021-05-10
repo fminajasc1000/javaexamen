@@ -34,7 +34,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		 * 
 		 */
 
-		com.demo.entity.User appUser = userRepository.findByUsername(username)
+		com.demo.entity.User appUser = (userRepository.findByUsername(username))
 				.orElseThrow(() -> new UsernameNotFoundException("No existe usuario"));
 
 		/*
