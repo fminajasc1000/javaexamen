@@ -56,4 +56,8 @@ public class AppController {
 	public String visor() {
 		return "visor";
 	}
+	@GetMapping("/userForm")
+	public String userForm() {
+		return "user-form/user-view";
+	}
 }
